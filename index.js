@@ -328,10 +328,10 @@ function renderQuestionHeader(){
   const questionHeader =
   `<header>
     <div class="question-number">
-      <h3>Q<span class="currQuest">${currQuestIndex+1}</span></h3>
+      <h2>Q<span class="currQuest">${currQuestIndex+1}</span></h2>
     </div>
     <div class="score">
-      <h3>Score: <span class="currScore">${currScore}</span>/10</h3>
+      <h2>Score: <span class="currScore">${currScore}</span>/10</h2>
     </div>
   </header>
   <div class="js-question-cont"></div>`;

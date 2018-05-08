@@ -22,7 +22,7 @@ h2 {
   font-size: 30px;
 }
 
-h3 {
+header h2 {
   font-size: 20px;
 }
 
@@ -148,7 +148,7 @@ h2 {
   padding: 10px;
 }
 
-h3 {
+header h2 {
   margin: 0 auto;
   padding: 15px 0;
 }
@@ -299,7 +299,7 @@ footer p {
     font-size: 40px;
   }
 
-  h3 {
+header h2 {
     font-size: 25px;
   }
 
