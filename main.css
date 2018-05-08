@@ -1,0 +1,352 @@
+/***** Border-box *****/
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/***** Fonts *****/
+
+body {
+font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  font-family: 'Lobster Two', cursive;
+  font-size: 40px;
+  text-shadow: 1px 1px 2px black;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+.start-btn {
+  font-size: 35px;
+}
+
+.question-number,
+.score {
+  font-size: 20px;
+}
+
+.next-btn,
+.restart-btn {
+ font-size: 25px;
+}
+
+legend,
+label {
+  font-size: 16px;
+}
+
+.answer-text {
+  font-size: 14px;
+}
+
+footer p {
+  font-size: 8px;
+  font-style: italic;
+}
+
+/***** Color *****/
+
+/* Green: #8BCE34 or rgb(139,206,52)*/
+/* Red: rgb(155,50,25)*/
+/* Blue #4B6ED6 */
+/* Blue(hover) #1845AD */
+
+a, button, form, h1, h2, h3, h4, p, figcaption {
+    color: white;
+}
+
+.container,
+footer {
+  background-color: rgba(0,0,0,0.7);
+}
+
+.correct {
+  background-color: rgba(139,206,52, 0.6);
+}
+
+.incorrect {
+  background-color: rgba(155,50,25, 0.6);
+}
+
+button {
+  background-color: #1F57DE;
+}
+
+button:hover {
+  background-color: #1845AD;
+}
+
+footer p,
+footer a {
+  color: lightgrey;
+}
+
+/***** Page Background *****/
+
+html {
+  background-image: url(https://www.fb.pics/img/2018/04/23/1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: top;
+  position: relative;
+  min-height: 100%;
+}
+
+
+/***** Body *****/
+body {
+  margin: 0 0 90px 0;
+}
+
+/***** Page Header *****/
+header {
+  text-align: center;
+}
+
+header a {
+    text-decoration: none;
+}
+
+h1 {
+  margin: 15px 0;
+}
+
+.mtn-icn {
+  width: 60px;
+  margin-bottom: -10px;
+}
+
+
+/***** Quiz Container *****/
+.container {
+  margin: 0 auto;
+  width: 85%;
+  text-align: center;
+  border: 2px white solid;
+  padding: 0px;
+  max-width: 600px;
+  border-radius: 10px;
+}
+
+.container header {
+  border-bottom: 1px white solid;
+  font-size: 0px; /* fix for space between inline-block items */
+}
+
+h2 {
+  padding: 10px;
+}
+
+h3 {
+  margin: 0 auto;
+  padding: 15px 0;
+}
+
+.question-number, .score {
+  display: inline-block;
+  width: 50%;
+}
+
+.question-number {
+  border-right: 1px white solid;
+}
+
+/***** Buttons *****/
+
+button {
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.4);
+}
+
+.start-btn {
+  padding: 30px;
+  margin: 30px 0;
+}
+
+.restart-btn {
+  margin-bottom: 20px;
+}
+
+.next-btn,
+.restart-btn {
+  padding: 0;
+  padding: 10px 15px;
+}
+
+
+.next-btn {
+  display: block;
+  margin: 15px auto;
+}
+
+.ans-btn {
+  margin-bottom: 8px;
+  padding: 5px 10px;
+}
+
+/***** Form *****/
+
+form {
+  padding: 10px;
+}
+
+fieldset {
+  border: none;
+  padding: 0 5px;
+}
+
+legend {
+  text-align: left;
+  padding: 5px;
+}
+
+label {
+  text-align: left;
+  padding: 5px;
+  line-height: 1;
+}
+
+p {
+  padding: 5px;
+}
+
+
+.answer-choices {
+  text-align: left;
+  padding-left: 10%;
+  line-height: 2;
+}
+
+.feedback {
+  padding: 10px;
+}
+
+.answer-text {
+  /* margin: 0 20px 15px 20px; */
+  margin: 0 20px;
+}
+
+.ans-img {
+  max-width: 80%;
+  max-height: 350px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.3);
+}
+
+.js-question-cont {
+  padding-bottom: 10px;
+}
+
+/***** Final Page *****/
+.final-score {
+  margin: 5px 0;
+}
+
+/* .final-class {
+  margin-bottom: 20px;
+} */
+
+.final-icon {
+  display: block;
+  width: 75px;
+  margin: 20px auto;
+}
+
+/***** Footer *****/
+footer {
+  border-top: 1px solid white;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  padding: 5px;
+}
+
+footer p {
+  margin: 0px 10px;
+  padding-top: 3px;
+}
+
+.foot-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1;
+}
+
+/***** Media Queries *****/
+@media only screen and (min-width: 768px){
+  h1 {
+    font-size: 50px;
+    margin: 30px 0;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  h3 {
+    font-size: 25px;
+  }
+
+  .start-btn{
+    font-weight: bold;
+    font-size: 50px;
+  }
+  .container {
+    min-height: 500px;
+  }
+
+  .test-knowledge {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  legend {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+
+  label {
+    font-size: 22px;
+  }
+
+  .ans-btn {
+    margin-bottom: 15px;
+  }
+
+  .next-btn,
+  .restart-btn {
+   font-size: 30px;
+  }
+
+  form {
+    padding: 15px;
+  }
+
+  .js-question-cont {
+    padding-bottom: 40px;
+  }
+
+  .final-icon {
+    width: 150px;
+  }
+
+  footer p {
+    font-size: 10px;
+  }
+}
