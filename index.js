@@ -153,7 +153,7 @@ function renderFinalScreen() {
     `<h2 class="final-score">Final Score</h2>
     <h2 class="final-score">${finalScore}/10</h2>
     <h3 class="final-class">You're a ${classification}</h3>
-    <img class="final-icon" src=${classIcon}>
+    <img class="final-icon" src=${classIcon} alt="${classification} icon">
     <button type="button" name="restart-button" class="restart-btn">Restart Quiz</button>`
   );
   handleRestart();
